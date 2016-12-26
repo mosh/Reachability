@@ -53,16 +53,16 @@ type
   Reachability = public class
   private
     const kReachabilityChangedNotification:String = 'kNetworkReachabilityChangedNotification';
-    const kSCNetworkReachabilityFlagsTransientConnection:Int32 = 1 shl 0;
-    const kSCNetworkReachabilityFlagsReachable:Int32 = 1 shl 1;
-    const kSCNetworkReachabilityFlagsConnectionRequired:Int32 = 1 shl 2;
-    const kSCNetworkReachabilityFlagsConnectionOnTraffic:Int32 = 1 shl 3;
-    const kSCNetworkReachabilityFlagsInterventionRequired:Int32 = 1 shl 4;
-    const kSCNetworkReachabilityFlagsConnectionOnDemand:Int32 = 1 shl 5;
-    const kSCNetworkReachabilityFlagsIsLocalAddress:Int32 = 1 shl 16;
-    const kSCNetworkReachabilityFlagsIsDirect:Int32 = 1 shl 17;
+    const kSCNetworkReachabilityFlagsTransientConnection:Int64 = 1 shl 0;
+    const kSCNetworkReachabilityFlagsReachable:Int64 = 1 shl 1;
+    const kSCNetworkReachabilityFlagsConnectionRequired:Int64 = 1 shl 2;
+    const kSCNetworkReachabilityFlagsConnectionOnTraffic:Int64 = 1 shl 3;
+    const kSCNetworkReachabilityFlagsInterventionRequired:Int64 = 1 shl 4;
+    const kSCNetworkReachabilityFlagsConnectionOnDemand:Int64 = 1 shl 5;
+    const kSCNetworkReachabilityFlagsIsLocalAddress:Int64 = 1 shl 16;
+    const kSCNetworkReachabilityFlagsIsDirect:Int64 = 1 shl 17;
     {$IF TARGET_OS_IPHONE}
-    const kSCNetworkReachabilityFlagsIsWWAN:Int32 = 1 shl 18;
+    const kSCNetworkReachabilityFlagsIsWWAN:Int64 = 1 shl 18;
     {$ENDIF}
     const kSCNetworkReachabilityFlagsConnectionAutomatic:Int32 = kSCNetworkReachabilityFlagsConnectionOnTraffic;
   
